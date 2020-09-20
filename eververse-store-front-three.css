@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 8vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #151d1daf;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 600px;
+    position: fixed;
+    z-index: 2;
+  }
+
+  .nav-links li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 60px;
+    z-index: 2;
+    transition-duration: 800ms;
+  }
+
+  .nav-links li:hover {
+    transition-duration: 800ms;
+    transform: scale(1.1);
+    text-decoration-line: underline;
+  }
+
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    color: rgb(240, 235, 235);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .nav-links a:hover {
+    color: rgb(15, 209, 193);
+  }
+
+  .nav li input {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    width: 50%;
+    margin-left: 60px;
+    position: fixed;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    } 
+
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background:  url('d2vs8.webm') center center/cover ;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  object-fit: cover;
+  background:  url('d2vs8.webm') center center/cover ;
+
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  background:  url('d2vs8.webm') center center/cover ;
+
+}
+
+.content {
+	z-index: 2;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("wallpaperflare.com_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+}
+
+.title {
+  color: turquoise;
+  text-align: center;
+  font-weight: bold;
+}
+
+.info {
+  background-color: #151d1daf;
+  z-index: 999;
+  width: 50%;
+  margin: auto;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-color: #151d1daf;
+  text-shadow: 2px 2px #be841e;
+  color: turquoise;
+  font-size: 4.0em;
+  margin: 0.5em 0 0.5em 0;
+  z-index:999
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color: #be841e;
+  text-shadow: 1px 1px turquoise;
+  font-size: 2.2em;
+  margin: 0.5em 0 0.35em 0;
+  padding: 0px;
+}
+
+h4{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px #be841e;
+  color: turquoise;
+  font-size: 4.0em;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.eyes {
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  color: turquoise;
+  font-size: 1.2em;
+  margin: 0.5em 0 0.5em 0;
+  padding: 0;
+}
+
+.weekly {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-color: #151d1daf;
+  width: 30%;
+  margin-left: 15px;
+  text-shadow: 2px 2px #be841e;
+  color: turquoise;
+  font-size: 2.0em;
+  text-align: left;
+  font-weight: bold;
+  padding: 4px;
+  z-index:999;
+}
+
+.armor img {
+  display: inline-block;
+  height: auto; 
+  width: auto; 
+  max-width: 400px; 
+  max-height: 400px;
+  padding: 10px;
+  margin-left: 60px;
+  border-radius: 10%;
+  box-shadow: 10px 10px 5px turquoise;
+}
+
+.weapons img {
+  display: inline-block;
+  height: auto; 
+  width: auto; 
+  max-width: 400px; 
+  max-height: 400px;
+  padding: 10px;
+  margin-left: 60px;
+  border-radius: 10%;
+  box-shadow: 10px 10px 5px turquoise;
+}
+
+.armor {
+  display: inline-block;
+}
+
+.armor li {
+  display: inline-block;
+}
+
+.weapons {
+  display: inline-block;
+}
+
+.weapons li {
+  display: inline-block;
+}
+
+.seriously {
+  display: inline-block;
+  padding-left: 40px;
+  text-align: center;
+  min-height: 8vh;
+  font-family: "Poppins", sans-serif;
+  z-index: 2;
+  position: sticky;
+}
+
+.seriously img{
+  height: auto; 
+  width: auto; 
+  max-width: 50px; 
+  max-height: 50px;
+}
+
+.seriously li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 60px;
+  z-index: 2;
+  transition-duration: 800ms;
+}
+
+.seriously li:hover {
+  transition-duration: 800ms;
+  transform: scale(1.1);
+}
+
+.seriously a:hover {
+  color: rgb(15, 209, 193);
+}
+
+.serious {
+  display: inline-block;
+  padding-left: 40px;
+  text-align: center;
+  min-height: 8vh;
+  font-family: "Poppins", sans-serif;
+  z-index: 2;
+  position: sticky;
+}
+
+.serious li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 60px;
+  z-index: 2;
+  transition-duration: 800ms;
+}
+
+.serious li:hover {
+  transition-duration: 800ms;
+  transform: scale(1.1);
+  text-decoration-line: underline;
+}
+
+.serious a {
+  display: inline-block;
+  color: rgb(240, 235, 235);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.serious a:hover {
+  color: rgb(15, 209, 193);
+}
+
+.socialIcon {
+  height: auto; 
+  width: auto; 
+  max-width: 50px; 
+  max-height: 50px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: sticky;
+}
+
+#footlink {
+display: inline-flex;
+justify-content: center;
+position: sticky;
+align-items: center;
+left: 350px;
+bottom: 0;
+background-color: lightslategray;
+padding-top: 10px;
+width: 100%;
+z-index: 999;
+}
+
+.verse {
+  display: inline-block;
+  height: auto; 
+  width: 100%; 
+}
